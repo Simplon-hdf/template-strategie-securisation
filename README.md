@@ -3,16 +3,16 @@
 ### **Introduction générale**
 - **Défense en profondeur**
     - *Pourquoi le mettre en place ?*
-    - *Comment ?*
+    - *Pour lutter contre quoi ? Dans quel contexte ?*
 - **Réduction de la surface d'attaque**
     - *Pourquoi le mettre en place ?*
-    - *Comment ?*
+    - *Pour lutter contre quoi ? Dans quel contexte ?*
 - **RGPD (Règlement Général sur la Protection des Données)**:
   <!-- - *Données personnelles* 
   - *Données sensibles* 
   - *Données critiques*  -->
     - *Pourquoi le mettre en place ?*
-    - *Comment ?*
+    - *Pour lutter contre quoi ? Dans quel contexte ?*
     - *Consentement et conformité avec la réglementation en vigueur*
 
 ### **Back-end**
@@ -20,7 +20,7 @@
 #### Introduction
 1. Politique de moindre privilège
 - *Pourquoi ?*
-- *Comment ?*
+- *Pour lutter contre quoi ? Dans quel contexte ?*
 2. RBAC (Role-Based Access Control)
 
 #### Base de Données (BDD)
@@ -34,9 +34,12 @@
 - Utilisation des UUID
 - Politique de rétention :
     - Sauvegarde   
+      - Automatisation
         - *Nombre*
         - *Fréquence*
-        - *Heure*
+    - Politique de rétention
+        - Nombre de sauvegardes
+        - Support (stockage)
 
 
 #### API
@@ -59,17 +62,11 @@
 #### Introduction
 - *Jamais faire confiance au client (navigateur) -> règle d'or* 
 
-#### Différents types d'attaque
-- *Injection SQL*
-- *Cross-Site Scripting (XSS)* 
-- *Cross-Site Request Forgery (CSRF)* 
-- *Clickjacking* 
-- *Injections de dépendances*
-- *Attaques par force brute (bruteforce)*
-- *Attaques par déni de service (DoS)* 
-
-#### Sécurisation
-
-- **Sécurisation des communications** :
-  - *HTTPS*
-<br>
+#### Protocoles de sécurité (côté front-end)
+- HTTP + TLS = HTTPS
+    - HSTS
+    - TLS
+- SOP
+- CSP
+  - Referrer Policy
+  - SRI
